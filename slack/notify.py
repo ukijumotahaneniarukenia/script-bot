@@ -1,7 +1,7 @@
 import requests
 import json
 
-web_hook_url = 'https://hooks.slack.com/services/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'
+web_hook_url = 'hogehoge'
 target_channel = '#script-sketch-bot'
 notify_user_name = 'ボットだよーん'
 icon_emoji = ':shipit:'
