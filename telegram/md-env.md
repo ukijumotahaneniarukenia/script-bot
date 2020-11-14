@@ -141,3 +141,62 @@ OUT
 利用可能なメソッド名など
 
 - https://core.telegram.org/bots/api#available-methods
+
+自分のユーザーIDを取得する
+
+
+デスクトップアプリを起動して左上の検索欄に「@userinfobot」を入力し、ユーザー情報の確認を進める
+
+私
+```
+/start
+```
+
+userinfobot
+```
+Id: 0123456789
+First: うんこ
+Last: もりこ
+```
+
+aineボットから私へテキストメッセージ送信
+
+
+IN
+```
+$ cat postData.json
+{
+  "chat_id": 0123456789,
+  "text": "すもももももももものうち"
+}
+```
+
+CMD
+
+```
+$ curl -s -H 'Content-Type: application/json' -X POST 'https://api.telegram.org/bot$API_TOKEN/sendMessage' -d '@postData.json' | jq
+```
+
+OUT
+```
+{
+  "ok": true,
+  "result": {
+    "message_id": 2,
+    "from": {
+      "id": 9876543210,
+      "is_bot": true,
+      "first_name": "aine",
+      "username": "script_sketch_bot"
+    },
+    "chat": {
+      "id": 0123456789,
+      "first_name": "うんこ",
+      "last_name": "もりこ",
+      "type": "private"
+    },
+    "date": 1605335738,
+    "text": "すもももももももものうち"
+  }
+}
+```
