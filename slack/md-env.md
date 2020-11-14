@@ -19,7 +19,7 @@ IN
 CMD
 
 ```
-$ curl -s -H 'Content-Type: application/json' -X POST https://hooks.slack.com/services/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 -d '@test.json' | awk 4
+$ curl -s -H 'Content-Type: application/json' -X POST My_Web_Hook_Url -d '@test.json' | awk 4
 ```
 
 OUT
