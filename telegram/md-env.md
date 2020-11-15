@@ -1,5 +1,9 @@
 telegram
 
+botの各種言語実装へのリンク
+
+- https://core.telegram.org/bots/samples
+
 telegram install
 
 - https://telegram.org/
