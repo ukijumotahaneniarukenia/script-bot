@@ -13,4 +13,4 @@
   - GAS（スラックへ通知など外部サービス連携ができる）
 
 - メッセージングアプリ
-  - viber,slack,line,telegram
+  - viber,slack,line,telegram,signal
