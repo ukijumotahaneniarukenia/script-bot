@@ -12,5 +12,5 @@
 - プログラム
   - GAS（スラックへ通知など外部サービス連携ができる）
 
-- メッセージングアプリ
-  - viber,slack,line,telegram
+- メッセージングアプリ（APIがあるか）
+  - viber,slack,line,telegram,signal,groupme,reddit,Discord
