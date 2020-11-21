@@ -8,7 +8,6 @@
 - https://github.com/reddit-archive/reddit/wiki/API
 
 
-
 ```
 feedlyと同じ要領
 
@@ -61,7 +60,37 @@ $ curl -X POST -d 'grant_type=password&username=LOGIN_USER_NAME&password=LOGIN_P
 
 APIリクエスト
 $ curl -s -H "Authorization: bearer ACCESS_TOKEN" -A "ChangeMeClient/0.1 by LOGIN_USER_NAME" https://oauth.reddit.com/api/v1/me
+```
+
+API仕様
+
+- https://www.reddit.com/dev/api
+
+サブカテゴリ
+
+- https://www.reddit.com/subreddits/leaderboard/tech/
+
+- https://www.reddit.com/subreddits/a-1
+
+アカウント情報取得
+
+```
+$ curl -s -H "Authorization: bearer ACCESS_TOKEN" -A "ChangeMeClient/0.1 by LOGIN_USER_NAME" https://oauth.reddit.com/api/v1/me | jq
+```
+
+
+サブカテゴリ単位で検索
+
+```
+$ curl -s -H "Authorization: bearer ACCESS_TOKEN" -A "ChangeMeClient/0.1 by LOGIN_USER_NAME" 'https://oauth.reddit.com/r/node/top/?sort=top&t=now' | jq
+```
 
 
 ```
+$ curl -s -H "Authorization: bearer ACCESS_TOKEN" -A "ChangeMeClient/0.1 by LOGIN_USER_NAME" 'https://oauth.reddit.com/r/node/top/?sort=top&t=today' | jq
+```
 
+
+```
+$ curl -s -H "Authorization: bearer ACCESS_TOKEN" -A "ChangeMeClient/0.1 by LOGIN_USER_NAME" 'https://oauth.reddit.com/r/node/top/?sort=top&t=week' | jq
+```
