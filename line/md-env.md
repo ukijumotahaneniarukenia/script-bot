@@ -1,6 +1,10 @@
 line
 - https://developers.line.biz/ja/docs/messaging-api/getting-started/#using-console
 
+
+アカウントあれば通知できるサービス
+- https://notify-bot.line.me/
+
 結構重い。
 ウェブフックURLは用意してあるとハンディだった。
 
