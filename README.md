@@ -15,3 +15,5 @@
 
 - https://sendbird.com/
 - https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api
+
+- socketio mongodb
