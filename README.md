@@ -2,6 +2,8 @@
 
 - https://www.digitaltrends.com/mobile/best-text-messaging-apps/
 
+- https://www.infocubic.co.jp/blog/archives/2407/
+
 - クラウドストレージ
   - スプレッドシート
   - MonogoDB realm
